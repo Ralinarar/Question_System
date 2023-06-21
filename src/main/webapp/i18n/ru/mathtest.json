@@ -1,0 +1,27 @@
+{
+  "qsApp": {
+    "mathtest": {
+      "home": {
+        "title": "Mathtests",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Mathtest",
+        "createOrEditLabel": "Создать или отредактировать Mathtest",
+        "notFound": "Mathtests не найдено"
+      },
+      "created": "Новый Mathtest создан с идентификатором {{ param }}",
+      "updated": "Mathtest обновлен с идентификатором {{ param }}",
+      "deleted": "Mathtest удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Mathtest {{ id }}?"
+      },
+      "detail": {
+        "title": "Mathtest"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "keys": "Keys",
+      "treshold": "Treshold",
+      "assigned": "Assigned"
+    }
+  }
+}

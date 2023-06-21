@@ -1,0 +1,35 @@
+{
+  "changelogDate": "20230513210431",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "rdfValue",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Predicate",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "predicate",
+      "ownerSide": true,
+      "relationshipName": "author",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": ["required"]
+    },
+    {
+      "otherEntityField": "mock",
+      "otherEntityName": "template",
+      "otherEntityRelationshipName": "predicate",
+      "ownerSide": true,
+      "relationshipName": "template",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

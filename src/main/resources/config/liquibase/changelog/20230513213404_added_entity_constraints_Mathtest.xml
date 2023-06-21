@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Mathtest.
+    -->
+    <changeSet id="20230513213404-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="mathtest_id"
+                                 baseTableName="rel_mathtest__assigned"
+                                 constraintName="fk_rel_mathtest__assigned__mathtest_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="mathtest"/>
+
+        <addForeignKeyConstraint baseColumnNames="assigned_id"
+                                 baseTableName="rel_mathtest__assigned"
+                                 constraintName="fk_rel_mathtest__assigned__assigned_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+    </changeSet>
+</databaseChangeLog>

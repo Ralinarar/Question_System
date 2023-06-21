@@ -1,0 +1,27 @@
+{
+  "changelogDate": "20230513215212",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "plain",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "answer",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Question",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "mathtest",
+      "relationshipName": "test",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

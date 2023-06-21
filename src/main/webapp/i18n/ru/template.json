@@ -1,0 +1,25 @@
+{
+  "qsApp": {
+    "template": {
+      "home": {
+        "title": "Templates",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Template",
+        "createOrEditLabel": "Создать или отредактировать Template",
+        "notFound": "Templates не найдено"
+      },
+      "created": "Новый Template создан с идентификатором {{ param }}",
+      "updated": "Template обновлен с идентификатором {{ param }}",
+      "deleted": "Template удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Template {{ id }}?"
+      },
+      "detail": {
+        "title": "Template"
+      },
+      "id": "ID",
+      "mock": "Mock",
+      "user": "User"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Predicate.
+    -->
+    <changeSet id="20230513210431-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="author_id"
+                                 baseTableName="predicate"
+                                 constraintName="fk_predicate__author_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="predicate_id"
+                                 baseTableName="rel_predicate__template"
+                                 constraintName="fk_rel_predicate__template__predicate_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="predicate"/>
+
+        <addForeignKeyConstraint baseColumnNames="template_id"
+                                 baseTableName="rel_predicate__template"
+                                 constraintName="fk_rel_predicate__template__template_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="template"/>
+    </changeSet>
+</databaseChangeLog>

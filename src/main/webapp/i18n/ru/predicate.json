@@ -1,0 +1,26 @@
+{
+  "qsApp": {
+    "predicate": {
+      "home": {
+        "title": "Predicates",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Predicate",
+        "createOrEditLabel": "Создать или отредактировать Predicate",
+        "notFound": "Predicates не найдено"
+      },
+      "created": "Новый Predicate создан с идентификатором {{ param }}",
+      "updated": "Predicate обновлен с идентификатором {{ param }}",
+      "deleted": "Predicate удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Predicate {{ id }}?"
+      },
+      "detail": {
+        "title": "Predicate"
+      },
+      "id": "ID",
+      "rdfValue": "Rdf Value",
+      "author": "Author",
+      "template": "Template"
+    }
+  }
+}
